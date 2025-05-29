@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+</head>
+<body>
+  <button id="themeToggle" title="Switch to dark mode">🌞</button>
+  <div class="container">
+    <h1>QR Code Generator</h1>
+    <form id="qrForm">
+      <label for="textInput">Enter text or URL:</label><br />
+      <input type="text" id="textInput" required placeholder="Enter URL or text" />
+
+      <label for="fileType">Download Format:</label>
+      <select id="fileType">
+        <option value="png" selected>PNG</option>
+        <option value="jpeg">JPEG</option>
+        <option value="svg">SVG</option>
+      </select>
+
+      <button type="submit">Generate QR Code</button>
+    </form>
+    <div id="qrCode"></div>
+    <button id="downloadBtn" style="display:none;">Download QR Code</button>
+    <p>Created by <spam style="color: rgb(9, 175, 241);">@Vardhan_Bendadi</spam></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
